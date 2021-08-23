@@ -1,0 +1,146 @@
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --HoverBrightblue: hsl(245, 90%, 60%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+
+html {
+  font-size: 60%;
+}
+
+body {
+  margin: 0;
+  font-family: "Red Hat Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background: hsl(225, 100%, 94%) url("./images/pattern-background-desktop.svg")
+    no-repeat;
+  background-size: 100% auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 420px;
+  border-radius: 18px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0px 17px 60px -12px rgba(56, 41, 224, 0.4);
+  -webkit-box-shadow: 0px 17px 60px -12px rgba(56, 41, 224, 0.4);
+  -moz-box-shadow: 0px 17px 60px -12px rgba(56, 41, 224, 0.4);
+}
+
+.card-img {
+  width: 100%;
+}
+.body-header {
+  color: var(--Darkblue);
+  font-weight: 900;
+  margin: 30px 0 0 0;
+  font-size: 3rem;
+}
+.body-text {
+  padding: 0 50px;
+  color: var(--Desaturatedblue);
+  margin: 10px 0 10px 0;
+  font-size: 16px;
+}
+.order-summary {
+  text-align: center;
+}
+.annual-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--Verypaleblue);
+  padding: 0 2rem;
+  border-radius: 10px;
+  margin: 1.5rem 4rem;
+}
+
+.plan-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 70px;
+  margin-left: 0;
+}
+.annual-plan img {
+  margin-right: 0;
+}
+.plan-head {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--Darkblue);
+}
+.plan-text {
+  margin-top: 0;
+  font-size: 16px;
+  color: var(--Desaturatedblue);
+}
+.plan-btn {
+  color: var(--Brightblue);
+  font-weight: 700;
+  cursor: pointer;
+}
+.plan-btn:hover,
+.plan-btn:focus {
+  color: var(--Darkblue);
+  text-decoration: none;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 4rem;
+  padding: 1.5rem 0;
+}
+
+.buttons:focus {
+  outline: none;
+}
+.buttons .btn {
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.btn-proceed {
+  background-color: var(--Brightblue);
+  color: #fff;
+  box-shadow: 0px 19px 47px -12px rgba(56, 41, 224, 0.51);
+  -webkit-box-shadow: 0px 19px 47px -12px rgba(56, 41, 224, 0.51);
+  -moz-box-shadow: 0px 19px 47px -12px rgba(56, 41, 224, 0.51);
+}
+.btn-proceed:hover,
+.btn-proceed:focus {
+  background-color: var(--HoverBrightblue);
+}
+.btn-cancel {
+  background-color: #fff;
+  color: var(--Desaturatedblue);
+  margin-top: 10px;
+}
+.btn-cancel:hover,
+.btn-cancel:focus {
+  color: var(--Darkblue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: var(--Desaturatedblue);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
